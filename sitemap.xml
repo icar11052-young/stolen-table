@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://icar11052-young.github.io/stolen-table/index.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <loc>https://icar11052-young.github.io/stolen-table/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -11,12 +11,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://icar11052-young.github.io/stolen-table/posts/긁어온-밥상-소개.html</loc>
+    <loc>https://icar11052-young.github.io/stolen-table/posts/%EA%B8%81%EC%96%B4%EC%98%A8-%EB%B0%A5%EC%83%81-%EC%86%8C%EA%B0%9C.html</loc>
     <lastmod>2026-07-02</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://icar11052-young.github.io/stolen-table/posts/테스트-파이프라인-확인.html</loc>
+    <loc>https://icar11052-young.github.io/stolen-table/posts/%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%ED%99%95%EC%9D%B8.html</loc>
     <lastmod>2026-07-02</lastmod>
     <priority>0.8</priority>
   </url>

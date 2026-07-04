@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://icar11052-young.github.io/stolen-table/sitemap.xml
+# site: 긁어온 밥상 — https://icar11052-young.github.io/stolen-table
