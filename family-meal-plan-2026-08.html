@@ -37,8 +37,11 @@
 
   .day{ background:var(--paper-raised); border:1px solid var(--line); border-radius:6px; margin-bottom:12px; overflow:hidden; }
   .day-head{ background:var(--celadon-soft); padding:6px 14px; font-weight:700; font-size:13px; color:var(--celadon); }
-  .meal{ padding:10px 14px; }
+  .meal{ padding:10px 14px; display:flex; gap:12px; align-items:flex-start; justify-content:space-between; }
   .meal + .meal{ border-top:1px dashed var(--line); }
+  .meal-text{ flex:1; min-width:0; }
+  .meal-thumb{ width:76px; height:76px; object-fit:cover; border-radius:6px; flex-shrink:0; border:1px solid var(--line); }
+  @media (max-width:480px){ .meal-thumb{ width:56px; height:56px; } }
   .meal-label{ display:inline-block; font-size:9.5px; font-weight:700; padding:1px 7px; border:1px solid var(--ink-soft); border-radius:3px; color:var(--ink-soft); margin-right:6px; }
   .dish{ font-size:14.5px; font-weight:700; }
   .dish a{ color:var(--ink); text-decoration:none; box-shadow:inset 0 -1px 0 var(--celadon); }
@@ -78,54 +81,72 @@
     <div class="day">
       <div class="day-head">화 8/4</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=8QJhXRGtdg0&t=5209s" target="_blank" rel="noopener">하얀 오징어 볶음</a></div>
-        <div class="src">78회 · 2024-08-23</div>
-        <div class="recipe">싱싱한 오징어를 데친 뒤 조선간장·올리브오일·방아잎·레몬즙 소스에 버무림(고추장 안 씀)</div>
-        <div class="timing">조리 12:10~ (20분)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=8QJhXRGtdg0&t=5209s" target="_blank" rel="noopener">하얀 오징어 볶음</a></div>
+          <div class="src">78회 · 2024-08-23</div>
+          <div class="recipe">싱싱한 오징어를 데친 뒤 조선간장·올리브오일·방아잎·레몬즙 소스에 버무림(고추장 안 씀)</div>
+          <div class="timing">조리 12:10~ (20분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish01_ojingeo_bokkeum.jpg" alt="하얀 오징어 볶음">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=B4TlTQORt7A&t=6886s" target="_blank" rel="noopener">새우 무국</a></div>
-        <div class="src">85회 · 2024-10-11 · + 계란찜</div>
-        <div class="recipe">새우 머리·껍질을 들기름에 볶아 육수 내고, 무 넣어 백간장:식초=2:1로 간</div>
-        <div class="timing">조리 17:40~ (새우는 전날 밤 손질)</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=B4TlTQORt7A&t=6886s" target="_blank" rel="noopener">새우 무국</a></div>
+          <div class="src">85회 · 2024-10-11 · + 계란찜</div>
+          <div class="recipe">새우 머리·껍질을 들기름에 볶아 육수 내고, 무 넣어 백간장:식초=2:1로 간</div>
+          <div class="timing">조리 17:40~ (새우는 전날 밤 손질)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish02_saeu_muguk.jpg" alt="새우 무국">
       </div>
     </div>
 
     <div class="day">
       <div class="day-head">수 8/5</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=GwIgMRKPAXE&t=5298s" target="_blank" rel="noopener">생김국 & 생김전</a></div>
-        <div class="src">12회 · 2023-04-14 · 초간단</div>
-        <div class="recipe">[국] 끓는 물에 김+달걀+간장+전분 / [전] 불린 김에 부침가루 묻혀 풋고추 고명</div>
-        <div class="timing">조리 12:05~ (25분)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=GwIgMRKPAXE&t=5298s" target="_blank" rel="noopener">생김국 & 생김전</a></div>
+          <div class="src">12회 · 2023-04-14 · 초간단</div>
+          <div class="recipe">[국] 끓는 물에 김+달걀+간장+전분 / [전] 불린 김에 부침가루 묻혀 풋고추 고명</div>
+          <div class="timing">조리 12:05~ (25분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish03_saengim_guk.jpg" alt="생김국">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=63vp3o_kvYI&t=5462s" target="_blank" rel="noopener">대파육 (대파 돼지고기 조림)</a></div>
-        <div class="src">68회 · 2024-06-14</div>
-        <div class="recipe">삼겹살 겉면 굽고 물+조선간장+후추로 1시간 삶기 → 대파로 감싸 1시간 더 찌기</div>
-        <div class="timing">오후 3~5시 조리 완료, 픽업 후(5:55) 데우기만</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=63vp3o_kvYI&t=5462s" target="_blank" rel="noopener">대파육 (대파 돼지고기 조림)</a></div>
+          <div class="src">68회 · 2024-06-14</div>
+          <div class="recipe">삼겹살 겉면 굽고 물+조선간장+후추로 1시간 삶기 → 대파로 감싸 1시간 더 찌기</div>
+          <div class="timing">오후 3~5시 조리 완료, 픽업 후(5:55) 데우기만</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish04_daepayuk.jpg" alt="대파육">
       </div>
     </div>
 
     <div class="day">
       <div class="day-head">목 8/6</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=Ga3qK2fAWWA&t=5185s" target="_blank" rel="noopener">동죽(물총조개) 덮밥</a></div>
-        <div class="src">8회 · 2023-03-10</div>
-        <div class="recipe">끓는 물에 동죽 넣고 입 벌리면 바로 건짐. 밥에 버터+간장 비비고 동죽살+생달래</div>
-        <div class="timing">조리 12:15~ (동죽은 오늘 아침 신선 구매)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=Ga3qK2fAWWA&t=5185s" target="_blank" rel="noopener">동죽(물총조개) 덮밥</a></div>
+          <div class="src">8회 · 2023-03-10</div>
+          <div class="recipe">끓는 물에 동죽 넣고 입 벌리면 바로 건짐. 밥에 버터+간장 비비고 동죽살+생달래</div>
+          <div class="timing">조리 12:15~ (동죽은 오늘 아침 신선 구매)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish05_dongjuk_deopbap.jpg" alt="동죽 덮밥">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=LQE3TTDLw6c&t=5649s" target="_blank" rel="noopener">우리맛닭 맑은 닭곰탕</a></div>
-        <div class="src">24회 · 2023-07-07 · + 오이지무침</div>
-        <div class="recipe">닭+물만 넣고 뚜껑 열고 1~2시간 끓임, 소금만으로 간</div>
-        <div class="timing">전날 밤 해동, 당일 아침 9시부터 끓이기 시작</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=LQE3TTDLw6c&t=5649s" target="_blank" rel="noopener">우리맛닭 맑은 닭곰탕</a></div>
+          <div class="src">24회 · 2023-07-07 · + 오이지무침</div>
+          <div class="recipe">닭+물만 넣고 뚜껑 열고 1~2시간 끓임, 소금만으로 간</div>
+          <div class="timing">전날 밤 해동, 당일 아침 9시부터 끓이기 시작</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish06_dakgomtang.jpg" alt="닭곰탕">
       </div>
     </div>
   </section>
@@ -136,72 +157,96 @@
     <div class="day">
       <div class="day-head">월 8/10</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=szkrNAQqNQs&t=5278s" target="_blank" rel="noopener">생시금치 샌드위치</a></div>
-        <div class="src">4회 · 2023-02-10 · 매우 간단</div>
-        <div class="recipe">생시금치+레몬즙+치즈가루+올리브유, 튀긴 통조림 햄 곁들여 식빵 사이에</div>
-        <div class="timing">조리 12:20~ (10분)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=szkrNAQqNQs&t=5278s" target="_blank" rel="noopener">생시금치 샌드위치</a></div>
+          <div class="src">4회 · 2023-02-10 · 매우 간단</div>
+          <div class="recipe">생시금치+레몬즙+치즈가루+올리브유, 튀긴 통조림 햄 곁들여 식빵 사이에</div>
+          <div class="timing">조리 12:20~ (10분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish07_sigeumchi_sandwich.jpg" alt="시금치 샌드위치">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=2fIz7--z23w&t=5774s" target="_blank" rel="noopener">소고기 가지볶음(어향가지)</a></div>
-        <div class="src">33회 · 2023-09-15 · + 콩나물국</div>
-        <div class="recipe">가지에 감자전분 입히고, 버터에 다진 소고기+토마토파스타소스 볶다가 가지 넣어 완성</div>
-        <div class="timing">픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=2fIz7--z23w&t=5774s" target="_blank" rel="noopener">소고기 가지볶음(어향가지)</a></div>
+          <div class="src">33회 · 2023-09-15 · + 콩나물국</div>
+          <div class="recipe">가지에 감자전분 입히고, 버터에 다진 소고기+토마토파스타소스 볶다가 가지 넣어 완성</div>
+          <div class="timing">픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish08_gaji_bokkeum.jpg" alt="가지볶음">
       </div>
     </div>
 
     <div class="day">
       <div class="day-head">화 8/11</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=grDqMq6dmNU&t=5242s" target="_blank" rel="noopener">여름 노각 스테이크</a></div>
-        <div class="src">76회 · 2024-08-09</div>
-        <div class="recipe">감자+우유+버터로 매시드포테이토, 안심 스테이크 굽고 노각(들기름·소금 절임) 곁들임</div>
-        <div class="timing">조리 12:00~ (30분)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=grDqMq6dmNU&t=5242s" target="_blank" rel="noopener">여름 노각 스테이크</a></div>
+          <div class="src">76회 · 2024-08-09</div>
+          <div class="recipe">감자+우유+버터로 매시드포테이토, 안심 스테이크 굽고 노각(들기름·소금 절임) 곁들임</div>
+          <div class="timing">조리 12:00~ (30분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish09_nogak_steak.jpg" alt="노각 스테이크">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=RFnFnGWUBQI&t=5359s" target="_blank" rel="noopener">참소라 숙회와 내장 소스</a></div>
-        <div class="src">19회 · 2023-06-02 · + 계란국 + 오이채</div>
-        <div class="recipe">참소라 5~10분 살짝 덜 익게 삶고, 내장에 우유·간장·고추·소금·마늘·레몬즙 섞어 소스</div>
-        <div class="timing">조리 17:45~ (15분)</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=RFnFnGWUBQI&t=5359s" target="_blank" rel="noopener">참소라 숙회와 내장 소스</a></div>
+          <div class="src">19회 · 2023-06-02 · + 계란국 + 오이채</div>
+          <div class="recipe">참소라 5~10분 살짝 덜 익게 삶고, 내장에 우유·간장·고추·소금·마늘·레몬즙 섞어 소스</div>
+          <div class="timing">조리 17:45~ (15분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish10_chamsora.jpg" alt="참소라 숙회">
       </div>
     </div>
 
     <div class="day">
       <div class="day-head">수 8/12</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=PLZoE59ZDUQ&t=5901s" target="_blank" rel="noopener">하얀 김치찜</a></div>
-        <div class="src">36회 · 2023-10-20 · 등갈비·묵은지</div>
-        <div class="recipe">멸치육수 내고 등갈비+통후추 넣어 30분, 씻은 묵은지 넣고 30분 더 끓임</div>
-        <div class="timing">1시간 걸려서 11:30부터 시작</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=PLZoE59ZDUQ&t=5901s" target="_blank" rel="noopener">하얀 김치찜</a></div>
+          <div class="src">36회 · 2023-10-20 · 등갈비·묵은지</div>
+          <div class="recipe">멸치육수 내고 등갈비+통후추 넣어 30분, 씻은 묵은지 넣고 30분 더 끓임</div>
+          <div class="timing">1시간 걸려서 11:30부터 시작</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish11_kimchi_jjim.jpg" alt="하얀 김치찜">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=vbrKO9XcOMw&t=5765s" target="_blank" rel="noopener">버터 제육볶음</a></div>
-        <div class="src">28회 · 2023-08-11 · + 미역국</div>
-        <div class="recipe">파기름 내고 고추장 볶아 고추기름, 삼겹살 볶아 버터밥에 얹고 초피가루</div>
-        <div class="timing">삼겹살은 전날 소분, 픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=vbrKO9XcOMw&t=5765s" target="_blank" rel="noopener">버터 제육볶음</a></div>
+          <div class="src">28회 · 2023-08-11 · + 미역국</div>
+          <div class="recipe">파기름 내고 고추장 볶아 고추기름, 삼겹살 볶아 버터밥에 얹고 초피가루</div>
+          <div class="timing">삼겹살은 전날 소분, 픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish12_butter_jeyuk.jpg" alt="버터 제육볶음">
       </div>
     </div>
 
     <div class="day">
       <div class="day-head">목 8/13</div>
       <div class="meal">
-        <span class="meal-label">점심 12:30</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=PSjZntp43L4&t=4524s" target="_blank" rel="noopener">조선간장 땅콩버터 부대찌개</a></div>
-        <div class="src">79회 · 2024-08-30</div>
-        <div class="recipe">두테기름에 파+양배추+햄 볶고 사골육수+조선간장, 땅콩버터·치즈로 진하게, 마무리 식초</div>
-        <div class="timing">조리 12:10~ (20분)</div>
+        <div class="meal-text">
+          <span class="meal-label">점심 12:30</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=PSjZntp43L4&t=4524s" target="_blank" rel="noopener">조선간장 땅콩버터 부대찌개</a></div>
+          <div class="src">79회 · 2024-08-30</div>
+          <div class="recipe">두테기름에 파+양배추+햄 볶고 사골육수+조선간장, 땅콩버터·치즈로 진하게, 마무리 식초</div>
+          <div class="timing">조리 12:10~ (20분)</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish13_budae_jjigae.jpg" alt="부대찌개">
       </div>
       <div class="meal">
-        <span class="meal-label">저녁 18:00</span>
-        <div class="dish"><a href="https://www.youtube.com/watch?v=000nQze_Y2I&t=5229s" target="_blank" rel="noopener">소고기 오이볶음</a></div>
-        <div class="src">13회 · 2023-04-21 · + 두부된장국</div>
-        <div class="recipe">가시오이는 방망이로 두드려 향 내고, 한우+통마늘+오이를 식초·소금으로 볶음</div>
-        <div class="timing">픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        <div class="meal-text">
+          <span class="meal-label">저녁 18:00</span>
+          <div class="dish"><a href="https://www.youtube.com/watch?v=000nQze_Y2I&t=5229s" target="_blank" rel="noopener">소고기 오이볶음</a></div>
+          <div class="src">13회 · 2023-04-21 · + 두부된장국</div>
+          <div class="recipe">가시오이는 방망이로 두드려 향 내고, 한우+통마늘+오이를 식초·소금으로 볶음</div>
+          <div class="timing">픽업 전(16:45~17:15) 요리 끝내고 데우기만</div>
+        </div>
+        <img class="meal-thumb" src="dish-shots/dish14_oi_bokkeum.jpg" alt="오이볶음">
       </div>
     </div>
   </section>
